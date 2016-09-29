@@ -4,12 +4,12 @@ OBJS = list.o thread.o
 
 .PHONY: all clean test
 
-all: Hw
+all: sort
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) -o $@ $<
 
-Hw: main.c $(OBJS)
+sort: main.c $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $< $(OBJS)
 
 clean:

@@ -37,7 +37,7 @@ int list_add(llist_t *the_list, val_t val)
  * if the index is out of range, it will return NULL
  */
  node_t *list_get(llist_t *the_list, uint32_t index){
-     if(index > list_size(the_list))
+     if(index > the_list->size)
         return NULL;
      node_t *head = the_list->head;
      while(index--){
