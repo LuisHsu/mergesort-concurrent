@@ -19,11 +19,6 @@ llist_t *list_new()
     return the_list;
 }
 
-uint32_t list_size(llist_t *the_list)
-{
-    return the_list->size;
-}
-
 /*
  * list_add inserts a new node with the given value val in the list
  * (if the value was absent) or does nothing (if the value is already present).
