@@ -5,6 +5,8 @@
 #include "thread.h"
 #include "list.h"
 
+#define USAGE "usage: ./sort [thread counts] [unsorted data]\n"
+
 struct{
     pthread_mutex_t mutex;
     int cutCount;
@@ -134,6 +136,7 @@ int main(int argc, char const *argv[]) {
     // Read args
     if(argc != 3){
         // TODO: Help message
+        printf(USAGE);
         return -1;
     }
     tCount = atoi(argv[1]);
