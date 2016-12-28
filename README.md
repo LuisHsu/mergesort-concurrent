@@ -1,4 +1,4 @@
-# Linked-List-Merge-Sort
+# mergesort-concurrent
 
 Concurremtly doing Linked-List merge sort by pthread
 
