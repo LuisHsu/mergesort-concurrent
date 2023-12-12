@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(sort
     main.cpp
+    Thread.cpp
+    Task.cpp
 )
 
 add_executable(gen
